@@ -122,7 +122,7 @@ public class TodoListsController implements ListsApi {
     @Override
     public ResponseEntity<List<TodoList>> getLists(BigDecimal top, BigDecimal skip) {
         if (top == null) {
-            top = new BigDecimal(20);
+            top = new BigDecimal(2);
         }
         if (skip == null) {
             skip = new BigDecimal(0);
